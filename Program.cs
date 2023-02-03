@@ -860,12 +860,351 @@ Console.WriteLine($"Полных метров в расстоянии {m}");
 //ввести 5-значное число
 //разбить число на цифры и записать цифры в массив
 
-int[] mas = new int[10];
-Random gen = new Random();
+// int[] mas = new int[10];
+// Random gen = new Random();
 
-for(int i = 0; i < 10; i++)
-{
-    mas[i] = gen.Next();
-    Console.WriteLine(mas[i]);
-}
+// for(int i = 0; i < 10; i++)
+// {
+//     mas[i] = gen.Next();
+//     Console.WriteLine(mas[i]);
+// }
+
+
+// Ввести положительные числа в массве
+// int[] mas = new int[10];
+// Random gen = new Random();
+// for(int i = 0; i<10; i++)
+// {
+//     mas[i] = gen.Next(Int16.MinValue,Int16.MaxValue);
+//     Console.WriteLine(mas[i]);
+// }
+//     Console.WriteLine("положительные ");
+// for(int i = 0; i<10;i++)
+// {
+//     if(mas[i] > 0)
+//     Console.Write(mas[i]+ " ");
+// }
+
+//вывести четные из массива
+// int[] mas = new int[10];
+// Random gen = new Random();
+// for(int i = 0; i<10; i++)
+// {
+//     mas[i] = gen.Next(Int16.MinValue, Int16.MaxValue);
+//     Console.WriteLine(mas[i]);
+// Console.WriteLine("четные");
+// }
+
+// for(int i =0; i<10;i++)
+// {
+//     if(mas[i] % 2 == 0)
+//     Console.WriteLine(mas[i]);
+// }
+
+// вывести кол-во четных чисел в массиве
+// int[] mas = new int[10];
+// Random gen = new Random();
+// int current = 0;
+// for(int i = 0; i<10; i++)
+// {
+//     mas[i] = gen.Next(Int16.MinValue, Int16.MaxValue);
+//     Console.WriteLine(mas[i]);
+
+// }
+// Console.Write("четные ");
+// for(int i =0; i<10;i++)
+// {
+//     if(mas[i] % 2 == 0)
+//     {
+//         current = current+1;
+//         Console.Write(mas[i]+" ");
+//     }
+// }
+// Console.WriteLine("кол-во " + current);
+
+
+
+//????
+// int[] CreateRandomArray(int size, int minValue, int maxValue);
+// {
+//     int[] array = new int[size];// выделяем память под массив
+//     for(int i = 0; i < size; i++)
+    
+//          array[i] = new Random().Next(minValue, maxValue +1);
+//     return array;
+    
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for( int i = 0; i < array.Length; i++);
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+// }
+
+// дано целое число N>0 Сформировать и вывести целочисленный массив размера N, содержащий первых положительных нечетных чисел 1,3,5...
+
+// int[] mas = new int[10];
+// Random gen = new Random ();
+// for(int i = 0; i < 10; i++)
+// {
+//     mas[i] = gen.Next(0, Int16.MaxValue);
+//     Console.WriteLine(mas[i]);
+// }
+// for(int i = 0; i < 10; i++)
+// {
+//     if(mas[i] % 2 != 0)
+//     Console.WriteLine($"нечетные {mas[i]}");
+// }
+//сформировать и вывести целочисленный массив размера N, содержащий степени двойки от 2 до ....4.8.16...
+// int[] mas = new int[100];
+// int degree = 2;
+// mas[0] = 2;
+// for(int i = 1; i < 31; i++)
+// {
+//     mas[i] = mas[i-1]  * degree;
+//     System.Console.WriteLine(mas[i]);
+// }
+
+// Дано целое число N (> 1), а также первый член A и разность D арифметической прогрессии.
+// Сформировать и вывести массив размера N, содержащий N первых членов данной прогрессии:
+// A, A + D, A + 2·D, A + 3·D
+
+// System.Console.WriteLine("Введите размер массива ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] mas = new int[n];
+// int a,d;
+// System.Console.WriteLine("Input A ");
+// a = Convert.ToInt32(Console.ReadLine());
+
+// System.Console.WriteLine("Input D ");
+// d = Convert.ToInt32(Console.ReadLine());
+
+// mas[0] = a;
+
+// for(int i = 1; i < n; i ++)
+// {
+//     mas[i] = mas[i - 1] + d;
+//     System.Console.WriteLine(mas[i]);
+// }
+
+// Дано целое число N (> 1), а также первый член A и знаменатель D
+// геометрической прогрессии. Сформировать и вывести массив размера N,
+// содержащий N первых членов данной прогрессии:
+// A, A·D, A·D
+
+// System.Console.WriteLine("Введите размер массива ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] mas = new int[n];
+
+// System.Console.WriteLine("Введите A ");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// System.Console.WriteLine("Введите B ");
+// int b = Convert.ToInt32(Console.ReadLine());
+
+// mas[0] = a;
+
+// for(int i = 1; i < n; i ++)
+// {
+//     mas[i] = mas[i-1] * b;
+//     System.Console.WriteLine(mas[i]);
+// }
+
+//Дано целое число N (> 2). Сформировать и вывести целочисленный
+//массив размера N, содержащий N первых элементов последовательности
+// чисел Фибоначчи FK:
+
+
+// System.Console.WriteLine("Введите размер массива ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] mas = new int[n];
+
+// mas[0] = 1;
+// mas[1] = 1;
+
+
+// for(int i = 2; i < n; i++)
+// {
+//     mas[i] = mas[i-1] + mas[i - 2];
+//     System.Console.WriteLine(mas[i]);
+// }
+
+//Array7◦ Дан массив размера N. Вывести его элементы в обратном порядке.
+
+// System.Console.WriteLine("Введите размер массива ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] mas = new int[n];
+// Random gen = new Random();
+
+// for( int i = n-1; i >= 0; i--)
+// {
+//     mas[i] = gen.Next(0,100);
+//     System.Console.WriteLine(mas[i]);
+// }
+
+// Array8. Дан целочисленный массив размера N. Вывести все содержащиеся в
+//данном массиве нечетные числа в порядке возрастания их индексов, а
+//также их количество K.
+
+// System.Console.WriteLine("Введите размер массива ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// int[] mas = new int[n];
+
+// Random gen = new Random();
+
+// for(int i = 0; i < n; i++)
+// {
+//     mas[i] = gen.Next(0,100);
+//     if(mas[i] % 2 != 0)
+//     {
+//         System.Console.WriteLine(mas[i]);
+//     }
+// }
+
+//Заполнить массив случайными числами и вывести его на экран.
+// Подсчитать кол-во: чётных, нечётных, делятся на 3, не делятся на 5, положительных, отрицательных, нулей.
+
+
+// int[] mas = new int[10];
+// int current = 0;
+// Random gen = new Random();
+
+// for(int i = 0; i< 10; i++)
+// { 
+//     mas[i] = gen.Next(0,100);
+//     System.Console.Write($"{mas[i]}, ");
+// }
+// for(int i = 0; i < 10; i++)
+// {
+//     if(i % 2 == 0)
+//     {
+//         current = current + 1;
+//     }
+//     System.Console.WriteLine($"кол-во {current}");
+// }
+
+// int[] mas = new int[10];
+// int current = 0;
+// Random gen = new Random();
+
+// for(int i = 0; i< 10; i++)
+// { 
+//     mas[i] = gen.Next(-10,10);
+//     System.Console.Write($"{mas[i]}, ");
+// }
+// for(int i = 0; i < 10; i++)
+// {
+//     if(mas[i] < 0)
+//     {
+//         current = current + 1;
+//     }
+    
+// }
+// System.Console.WriteLine($"кол-во {current}");
+
+
+// int max = 0;
+// int[] mas = new int[100];
+// Random gen = new Random();
+// int sum = 0;
+// for(int i = 0; i < 98; i++ )
+// {
+//     mas[i] = gen.Next(0,100);
+//     sum = mas[i] + mas[i + 1] + mas[i + 2];
+//     if(sum > max)
+//     {
+//         max = sum;
+//     }
+// }
+// System.Console.WriteLine(sum);
+
+// заполнить массив случаными числами и поменять макс и мин местами
+
+// int[] mas = new int[10];
+// Random gen = new Random();
+// for( int i = 0; i < 10; i++)
+// {
+//     mas[i] = gen.Next(0,100);
+// }
+// int max = mas[0];
+// int min = mas[0];
+// int placeMax = 0;
+// int minPlace = 0;
+// for(int i = 0; i < 10; i++)
+// {
+//     if(mas[i] >= max)
+//     {
+//         max = mas[i];
+//         placeMax = i;
+//     }
+//     if(mas[i] <= min)
+//     {
+//         min = mas[i];
+//         minPlace = i;
+//     }
+
+// }
+
+// int t = mas[placeMax];
+// mas[placeMax] = mas[minPlace];
+// mas[minPlace] = t;
+// for(int i = 0; i < 10; i++)
+// {
+//     System.Console.WriteLine(mas[i]);
+
+// }
+
+// Найти максимальный элемент среди четных
+
+
+// int[] mas = new int[10];
+// Random gen = new Random();
+// int max = 0;
+// for( int i = 0; i < 10; i++)
+// {
+//     mas[i] = gen.Next(0,50);
+//     if(mas[i] % 2 == 0 && mas[i] >= max)
+//     {
+//         max = mas [i];
+        
+//     }
+
+// }
+// System.Console.WriteLine(max);
+
+// Найти первый нечетный элемент с начала и первый нечетный элемент с конца и поменять местами
+
+// int[] mas = new int[30];
+// Random gen = new Random();
+// int start = 0;
+// int stop = 29;
+// for(int i = 0; i < 30; i++)
+// {
+//     if(mas[i] % 2 == 0)
+//     {
+//         start = i;
+//         break;// команда прерывает цикл
+//     }
+
+// }
+// for(int i = 29; i >= 0; i--)
+// {
+//     if(mas[i] % 2 != 0)
+//     {
+//         stop = i;
+//         break;// команда прерывает цикл
+//     }
+
+// }
+// int t = mas[start];
+// mas[start] = mas[stop];
+// mas[stop] = t;
+// System.Console.WriteLine();
+//uotg
+
+
+
 
